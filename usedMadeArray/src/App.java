@@ -27,15 +27,12 @@ public class App {
                     break;
                 }
 
-                System.out.println(arr.toString());
-
             } catch (NumberFormatException e) 
             {
                 System.out.println("Incorrect input");
                 break;
-            }
-
-                  
+            }                  
         }
+                        System.out.println(arr.toString());
     }
 }
