@@ -6,7 +6,10 @@ public class App {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        ArrayList <Integer> arr = new ArrayList<>();
+        System.out.println("Input size of an array: ");
+
+        int maxSize = sc.nextInt();
+        ArrayList <Integer> arr = new ArrayList<>(maxSize);
         
         System.out.println("Fillup an array with Integer numbers: ");
         
@@ -16,7 +19,7 @@ public class App {
 
             try 
             {
-                if (!input.isEmpty()) 
+                if (!input.isEmpty() && arr.size() != maxSize) 
                 {
                     int number = Integer.parseInt(input);
                     arr.add(number);
